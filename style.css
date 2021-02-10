@@ -16,12 +16,11 @@ body {
     z-index: 99;
 }
 
-#page-title {
-    font-weight: 300;
+#zydhan-logo {
     float: left;
-    height: 100%;
-    margin-top: 12px;
     margin-left: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .navbar-vertical-line {
@@ -40,7 +39,7 @@ body {
     border: none;
 }
 
-#sosmed {
+#navbar-sosmed {
     visibility: hidden;
 }
 
@@ -65,7 +64,7 @@ body {
         margin-left: -192px;
     }
 
-    #sosmed {
+    #navbar-sosmed {
         visibility: visible;
     }
 }
@@ -104,14 +103,11 @@ body {
     width: 100%;
     position: relative;
     top: 0px;
-    background-image: url("main-background.jpg");
+    background-image: url("main-background.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: bottom;
     background-position-x: center;
-    /* --horizontal-padding : 10%;
-    --vertical-padding : 25%;
-    padding: var(--vertical-padding) var(--horizontal-padding) var(--vertical-padding) var(--horizontal-padding); */
 }
 
 #hello-section {
