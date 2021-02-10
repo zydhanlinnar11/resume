@@ -39,13 +39,17 @@ body {
     border: none;
 }
 
+#sosmed {
+    visibility: hidden;
+}
+
 .navbutton:hover {
-    animation: navButtonHoverAnim;
+    animation: buttonHoverAnim;
     animation-duration: 500ms;
     background: silver;
 }
 
-@keyframes navButtonHoverAnim {
+@keyframes buttonHoverAnim {
     0% {
         background: white;
     }
@@ -56,8 +60,42 @@ body {
 
 @media only screen and (max-width: 600px) {
     .navbutton, .navbar-vertical-line {
-        visibility: hidden;
+        visibility: none;
+        margin-left: -192px;
     }
+
+    #sosmed {
+        visibility: visible;
+    }
+}
+
+#sidebar {
+    height: 768px;
+    width: 100%;
+    background-color: white;
+    z-index: 99;
+    top: 64px;
+    position: fixed;
+    margin-left: 100%;
+}
+
+.sidebar-button {
+    width: 100%;
+    height: 64px;
+    background: white;
+    border: none;
+}
+
+.sidebar-button:hover {
+    animation: buttonHoverAnim;
+    animation-duration: 500ms;
+    background: silver;
+}
+
+.horizontal-line {
+    background-color: silver;
+    height: 1px;
+    width: 100%;
 }
 
 #intro-section {
