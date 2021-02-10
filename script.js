@@ -10,9 +10,9 @@ function navButtonPressed() {
     "ig" : "instagram.com",
     "linkedin" : "linkedin.com/in"
   }
-  document.getElementById("linkedin").onclick = function() {window.open("https://" + linkSosmed["linkedin"] + "/" + userName)};
-  document.getElementById("gh").onclick = function() {window.open("https://" + linkSosmed["gh"] + "/" + userName)};
-  document.getElementById("sosmed").onclick = function() {
+  document.getElementById("linkedin").onclick = () => {window.open("https://" + linkSosmed["linkedin"] + "/" + userName)};
+  document.getElementById("gh").onclick = () => {window.open("https://" + linkSosmed["gh"] + "/" + userName)};
+  document.getElementById("sosmed").onclick = () => {
     if(sidebarOpened) {
       document.getElementById("sidebar").style["margin-left"] = "100%";
     } else {
@@ -20,11 +20,11 @@ function navButtonPressed() {
     }
     sidebarOpened = !sidebarOpened;
   }
-  document.getElementById("linkedin-sidebar").onclick = function() {window.open("https://" + linkSosmed["linkedin"] + "/" + userName)};
-  document.getElementById("gh-sidebar").onclick = function() {window.open("https://" + linkSosmed["gh"] + "/" + userName)};
+  document.getElementById("linkedin-sidebar").onclick = () => {window.open("https://" + linkSosmed["linkedin"] + "/" + userName)};
+  document.getElementById("gh-sidebar").onclick = () => {window.open("https://" + linkSosmed["gh"] + "/" + userName)};
   }
 
-  window.onresize = function() {
+  window.onresize = () => {
     sidebarOpened = false;
     document.getElementById("sidebar").style["margin-left"] = "100%";
   }
