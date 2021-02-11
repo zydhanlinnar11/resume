@@ -71,10 +71,10 @@ body {
     height: 100%;
     width: 100%;
     background-color: white;
+    transition: top 300ms;
     z-index: 5;
-    top: 64px;
+    top: -105%;
     position: fixed;
-    top: -100%;
 }
 
 .sidebar-button {
@@ -98,6 +98,7 @@ body {
 
 #intro-section {
     height: 100vh;
+    min-height: 550px;
     width: 100%;
     position: relative;
     top: 0px;

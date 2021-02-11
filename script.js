@@ -5,9 +5,8 @@ playHelloFadeAnim();
 
 window.onscroll = () => {
   let currYPos = window.pageYOffset;
-  if(currYPos > prevYPos) {
+  if(currYPos > prevYPos && !sidebarOpened) {
     document.getElementById("navbar").style.top = "-64px";
-    hideSideBar();
   } else {
     document.getElementById("navbar").style.top = "0px";
   }
@@ -29,32 +28,12 @@ function navButtonPressed() {
 }
 
 function hideSideBar() {
-  if(!sidebarOpened)
-    return;
-  let margin = 9;
-  let interval = setInterval(openAnim, 3);
-  function openAnim() {
-    if(margin == -100)
-      clearInterval(interval)
-    else {
-      margin--;
-      document.getElementById("sidebar").style["top"] = margin + "%";
-    }
-  }
+  document.getElementById("sidebar").style["top"] = "-105%";
   sidebarOpened = false;
 }
 
 function showSideBar() {
-  let margin = -100;
-  let interval = setInterval(openAnim, 3);
-  function openAnim() {
-    if(margin == 9)
-      clearInterval(interval)
-    else {
-      margin++;
-      document.getElementById("sidebar").style["top"] = margin + "%";
-    }
-  }
+  document.getElementById("sidebar").style["top"] = "64px";
   sidebarOpened = true;
 }
 
