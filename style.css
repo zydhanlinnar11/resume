@@ -177,6 +177,7 @@ body {
     margin: auto;
     position: relative;
     width: 90vw;
+    min-height: 494px;
     height: 90vh;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -201,6 +202,6 @@ body {
 
 @media only screen and (min-width: 600px) {
     .biodata-element {
-        font-size: 20px;
+        font-size: 22px;
     }
 }
