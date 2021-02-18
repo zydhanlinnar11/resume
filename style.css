@@ -171,6 +171,7 @@ body {
 
 #biodata-section {
     background-image: url("binary.webp");
+    min-height: 615px;
 }
 
 #biodata-box-bg {
