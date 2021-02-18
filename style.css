@@ -1,6 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    max-width: 100%;
 }
 
 #navbar {
@@ -96,7 +97,7 @@ body {
     width: 100%;
 }
 
-#intro-section {
+.section {
     height: 100vh;
     min-height: 550px;
     width: 100%;
@@ -107,6 +108,10 @@ body {
     background-size: cover;
     background-position-y: bottom;
     background-position-x: center;
+}
+
+#intro-section {
+    background-image: url("main-background.webp");
 }
 
 #hello-section {
@@ -160,4 +165,42 @@ body {
     margin-top: auto;
     margin-bottom: auto;
     background-color: black;
+}
+
+#biodata-section {
+    top: -40px;
+    background-image: url("binary.webp");
+}
+
+#biodata-box-bg {
+    margin: auto;
+    position: relative;
+    top: 5vh;
+    width: 90vw;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#biodata-title {
+    position: relative;
+    top: 2vh;
+    left: 15px;
+    font-size: 40px;
+    color: white;
+    font-weight: 100;
+}
+
+.biodata-element {
+    position: relative;
+    font-size: 20px;
+    width: 93%;
+    left: 15px;
+    color: white;
+    font-weight: 300;
+}
+
+@media only screen and (min-width: 600px) {
+    .biodata-element {
+        font-size: 22px;
+    }
 }
