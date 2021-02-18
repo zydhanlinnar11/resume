@@ -4,15 +4,16 @@ playHelloFadeAnim(); // Play fade animation when page opened
 
 // On scroll
 let prevYPos = window.pageYOffset;
+console.log(`before: ${prevYPos}`);
 window.onscroll = () => {
   // Hide navbar when scroll down and vice versa
-  console.log('executed');
   let currYPos = window.pageYOffset;
   if (currYPos > prevYPos && !sidebarOpened) {
     document.getElementById("navbar").style.top = "-64px";
   } else {
     document.getElementById("navbar").style.top = "0px";
   }
+  prevYPos = currYPos;
 };
 
 // Always hide sidebar when window is resized

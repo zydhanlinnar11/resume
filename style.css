@@ -192,7 +192,7 @@ body {
 
 .biodata-element {
     position: relative;
-    font-size: 20px;
+    font-size: 18px;
     width: 93%;
     left: 15px;
     color: white;
@@ -201,6 +201,6 @@ body {
 
 @media only screen and (min-width: 600px) {
     .biodata-element {
-        font-size: 22px;
+        font-size: 20px;
     }
 }
