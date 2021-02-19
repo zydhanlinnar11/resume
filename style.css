@@ -174,7 +174,7 @@ body {
     min-height: 615px;
 }
 
-#biodata-box-bg {
+.box-bg {
     margin: auto;
     position: relative;
     width: 90vw;
@@ -183,7 +183,7 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-#biodata-title {
+.content-title {
     position: relative;
     top: 2vh;
     left: 15px;
@@ -192,7 +192,7 @@ body {
     font-weight: 100;
 }
 
-.biodata-element {
+.content-element {
     position: relative;
     font-size: 18px;
     width: 93%;
@@ -202,21 +202,85 @@ body {
 }
 
 @media only screen and (min-width: 600px) {
-    .biodata-element {
+    .content-element {
         font-size: 22px;
     }
 }
 
 @media only screen and (min-width: 900px) {
-    #biodata-title {
+    .content-title {
         font-size: 46px;
         top: 4vh;
         left: 24px;
     }
 
-    .biodata-element {
+    .content-element {
         top: 4vh;
         font-size: 25px;
         left: 24px;
     }
+}
+
+#education-section {
+    background: url("informatika.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+#achievements-section {
+    background: url("success.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.li-margin {
+    width: 0px;
+    height: 10px;
+    background: rgba(0, 0, 0, 0);
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:active {
+    color: white;
+}
+
+#picture-source-section {
+    background: url("sources.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    min-height: 100vh;
+}
+
+#picture-source-box-bg {
+    height: 90vh;
+    min-height: 80vh;
+}
+
+footer {
+    height: 56px;
+    display: flex;
+}
+
+.footer-text {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    color: gray;
+}
+
+.footer-vertical-line {
+    height: 20px;
+    width: 1px;
+    margin: auto;
+    background-color: gray;
 }
