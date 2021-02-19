@@ -258,12 +258,6 @@ a:active {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    min-height: 100vh;
-}
-
-#picture-source-box-bg {
-    height: 90vh;
-    min-height: 80vh;
 }
 
 footer {
@@ -283,4 +277,18 @@ footer {
     width: 1px;
     margin: auto;
     background-color: gray;
+}
+
+@media only screen and (max-height: 600px) {
+    .section {
+        min-height: 600px;
+    }
+
+    .box-bg {
+        min-height: 535px;
+    }
+
+    .content-title {
+        top: 15px;
+    }
 }
