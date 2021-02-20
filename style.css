@@ -1,267 +1,408 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
 }
 
 #navbar {
-    display: block;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    height: 64px;
-    background-color: white;
-    transition: top 300ms;
-    z-index: 99;
+  display: block;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 64px;
+  background-color: white;
+  transition: top 300ms;
+  z-index: 99;
 }
 
 #zydhan-logo {
-    float: left;
-    margin-left: 16px;
-    margin-top: 8px;
-    margin-bottom: 8px;
+  float: left;
+  margin-left: 16px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .navbar-vertical-line {
-    background: silver;
-    float: right;
-    height: 32px;
-    margin-top: 16px;
-    width: 1px;
+  background: silver;
+  float: right;
+  height: 32px;
+  margin-top: 16px;
+  width: 1px;
 }
 
 .navbutton {
-    float: right;
-    width: 96px;
-    height: 100%;
-    background: white;
-    border: none;
+  float: right;
+  width: 96px;
+  height: 100%;
+  background: white;
+  border: none;
 }
 
 #navbar-sosmed {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .navbutton:hover {
-    animation: buttonHoverAnim;
-    animation-duration: 500ms;
-    background: silver;
+  animation: buttonHoverAnim;
+  animation-duration: 500ms;
+  background: silver;
 }
 
 @keyframes buttonHoverAnim {
-    0% {
-        background: white;
-    }
-    100% {
-        background: silver;
-    }
+  0% {
+    background: white;
+  }
+  100% {
+    background: silver;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .navbutton, .navbar-vertical-line {
-        visibility: hidden;
-        margin-left: -192px;
-    }
+  .navbutton,
+  .navbar-vertical-line {
+    visibility: hidden;
+    margin-left: -192px;
+  }
 
-    #navbar-sosmed {
-        visibility: visible;
-    }
+  #navbar-sosmed {
+    visibility: visible;
+  }
 }
 
 #sidebar {
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    transition: top 300ms;
-    z-index: 5;
-    top: -105%;
-    position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  transition: top 300ms;
+  z-index: 5;
+  top: -105%;
+  position: fixed;
 }
 
 .sidebar-button {
-    width: 100%;
-    height: 64px;
-    background: white;
-    border: none;
+  width: 100%;
+  height: 64px;
+  background: white;
+  border: none;
 }
 
 .sidebar-button:hover {
-    animation: buttonHoverAnim;
-    animation-duration: 500ms;
-    background: silver;
+  animation: buttonHoverAnim;
+  animation-duration: 500ms;
+  background: silver;
 }
 
 .horizontal-line {
-    background-color: silver;
-    height: 1px;
-    width: 100%;
+  background-color: silver;
+  height: 1px;
+  width: 100%;
 }
 
 .section {
-    display: flex;
-    max-width: 100%;
-    min-height: 100vh;
-    position: relative;
-    padding: 2vh;
+  display: flex;
+  max-width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 2vh;
 }
 
 .box-bg {
-    --box-bg-padding-leftright: 20px;
-    margin: auto;
-    position: relative;
-    min-width: 80vw;
-    min-height: 90vh;
-    padding: 25px var(--box-bg-padding-leftright) 15px var(--box-bg-padding-leftright);
-    background-color: rgba(0, 0, 0, 0.5);
+  --box-bg-padding-leftright: 20px;
+  margin: auto;
+  position: relative;
+  min-width: 80vw;
+  min-height: 90vh;
+  padding: 25px var(--box-bg-padding-leftright) 15px
+    var(--box-bg-padding-leftright);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #intro-section {
+  background-image: url("main-background-1080.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+  background-position-x: center;
+}
+
+#hello-section {
+  margin: auto;
+  top: 25%;
+  display: block;
+  opacity: 0;
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+}
+
+.hello-element {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#hello-world {
+  font-weight: 200;
+  font-size: 32px;
+}
+
+#im-zydhan {
+  font-weight: 300;
+  font-size: 50px;
+}
+
+#intro-desc {
+  display: flex;
+  height: 72px;
+}
+
+.intro-desc-text {
+  width: 100%;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.intro-desc-vertical-line {
+  width: 1px;
+  height: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: black;
+}
+
+#biodata-section {
+  background-image: url("binary-1080.jpg");
+}
+
+.content-title {
+  position: relative;
+  margin-top: 0px;
+  margin-bottom: 35px;
+  font-size: 40px;
+  color: white;
+  font-weight: 100;
+}
+
+.content-element {
+  position: relative;
+  font-size: 18px;
+  width: 93%;
+  color: white;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 600px) {
+  .content-element {
+    font-size: 22px;
+  }
+
+  #im-zydhan {
+    font-size: 72px;
+  }
+}
+
+#education-section {
+  background: url("informatika.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+  background-position-x: center;
+}
+
+#achievements-section {
+  background: url("success-1080.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+  background-position-x: center;
+}
+
+.li-margin {
+  width: 0px;
+  height: 10px;
+  background: rgba(0, 0, 0, 0);
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:active {
+  color: white;
+}
+
+#picture-source-section {
+  background: url("sources-1080.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+  background-position-x: center;
+}
+
+footer {
+  height: 56px;
+  display: flex;
+}
+
+.footer-text {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  color: gray;
+}
+
+.footer-vertical-line {
+  height: 20px;
+  width: 1px;
+  margin: auto;
+  background-color: gray;
+}
+
+/* Background size selector */
+/* above 4k */
+@media only screen and (min-height: 2160px) {
+  #intro-section {
     background-image: url("main-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: bottom;
     background-position-x: center;
-}
+  }
 
-#hello-section {
-    margin: auto;
-    top : 25%;
-    display: block;
-    opacity: 0;
-    position: relative;
-    width: fit-content;
-    height: fit-content;
-}
-
-.hello-element {
-    text-align: center;
-    text-transform: uppercase;
-}
-
-#hello-world {
-    font-weight: 200;
-    font-size: 32px;
-}
-
-#im-zydhan {
-    font-weight: 300;
-    font-size: 50px;
-}
-
-@media only screen and (min-width: 600px) {
-    #im-zydhan {
-        font-size: 72px;
-    }
-}
-
-#intro-desc {
-    display: flex;
-    height: 72px;
-}
-
-.intro-desc-text {
-    width: 100%;
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
-    font-weight: 400;
-    font-size: 18px;
-}
-
-.intro-desc-vertical-line {
-    width: 1px;
-    height: 20px;
-    margin-top: auto;
-    margin-bottom: auto;
-    background-color: black;
-}
-
-#biodata-section {
+  #biodata-section {
     background-image: url("binary.jpg");
-}
-
-.content-title {
-    position: relative;
-    margin-top: 0px;
-    margin-bottom: 35px;
-    font-size: 40px;
-    color: white;
-    font-weight: 100;
-}
-
-.content-element {
-    position: relative;
-    font-size: 18px;
-    width: 93%;
-    color: white;
-    font-weight: 300;
-}
-
-@media only screen and (min-width: 600px) {
-    .content-element {
-        font-size: 22px;
-    }
-}
-
-#education-section {
-    background: url("informatika.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: bottom;
     background-position-x: center;
-}
+  }
 
-#achievements-section {
+  #achievements-section {
     background: url("success.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: bottom;
     background-position-x: center;
-}
+  }
 
-.li-margin {
-    width: 0px;
-    height: 10px;
-    background: rgba(0, 0, 0, 0);
-}
-
-a:link {
-    color: white;
-}
-
-a:visited {
-    color: white;
-}
-
-a:active {
-    color: white;
-}
-
-#picture-source-section {
+  #picture-source-section {
     background: url("sources.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: bottom;
     background-position-x: center;
+  }
 }
 
-footer {
-    height: 56px;
-    display: flex;
+/* 4k */
+@media only screen and (max-height: 2160px) {
+  #intro-section {
+    background-image: url("main-background-2160.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: center;
+  }
+
+  #biodata-section {
+    background-image: url("binary-2160.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: center;
+  }
+
+  #achievements-section {
+    background: url("success-2160.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: center;
+  }
+
+  #picture-source-section {
+    background: url("sources-2160.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: center;
+  }
 }
 
-.footer-text {
-    margin: auto;
-    width: 100%;
-    text-align: center;
-    color: gray;
+/* 1440p */
+@media only screen and (max-height: 1440px) {
+  #intro-section {
+    background-image: url("main-background-1440.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: center;
+  }
+
+  #biodata-section {
+    background-image: url("binary-1440.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: center;
+  }
+
+  #achievements-section {
+    background: url("success-1440.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: center;
+  }
+
+  #picture-source-section {
+    background: url("sources-1440.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: center;
+  }
 }
 
-.footer-vertical-line {
-    height: 20px;
-    width: 1px;
-    margin: auto;
-    background-color: gray;
+/* 720p */
+@media only screen and (max-height: 720px) {
+  #intro-section {
+    background-image: url("main-background-720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: center;
+  }
+
+  #biodata-section {
+    background-image: url("binary-720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: center;
+  }
+
+  #achievements-section {
+    background: url("success-720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: center;
+  }
+
+  #picture-source-section {
+    background: url("sources-720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: center;
+  }
 }
