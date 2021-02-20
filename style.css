@@ -101,18 +101,18 @@ body {
 
 .section {
     display: flex;
-    width: 100%;
+    max-width: 100%;
     min-height: 100vh;
     position: relative;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding: 2vh;
 }
 
 .box-bg {
     --box-bg-padding-leftright: 20px;
     margin: auto;
     position: relative;
-    width: 90%;
+    min-width: 80vw;
+    min-height: 90vh;
     padding: 25px var(--box-bg-padding-leftright) 15px var(--box-bg-padding-leftright);
     background-color: rgba(0, 0, 0, 0.5);
 }
