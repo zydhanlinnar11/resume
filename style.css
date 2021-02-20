@@ -120,7 +120,7 @@ body {
 }
 
 #intro-section {
-  min-height: 560px;
+  min-height: max(560px, 100vh);
   background-image: url("main-background-1080.jpg");
   background-repeat: no-repeat;
   background-size: cover;
