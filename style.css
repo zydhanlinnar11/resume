@@ -100,20 +100,29 @@ body {
 }
 
 .section {
-    height: 100vh;
-    min-height: 550px;
+    display: flex;
     width: 100%;
+    min-height: 100vh;
     position: relative;
-    top: 0px;
-    background-image: url("main-background.webp");
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.box-bg {
+    --box-bg-padding-leftright: 20px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    padding: 25px var(--box-bg-padding-leftright) 15px var(--box-bg-padding-leftright);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#intro-section {
+    background-image: url("main-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: bottom;
     background-position-x: center;
-}
-
-#intro-section {
-    background-image: url("main-background.webp");
 }
 
 #hello-section {
@@ -170,23 +179,13 @@ body {
 }
 
 #biodata-section {
-    background-image: url("binary.webp");
-    min-height: 615px;
-}
-
-.box-bg {
-    margin: auto;
-    position: relative;
-    width: 90vw;
-    min-height: 527px;
-    height: 90vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url("binary.jpg");
 }
 
 .content-title {
     position: relative;
-    top: 2vh;
-    left: 15px;
+    margin-top: 0px;
+    margin-bottom: 35px;
     font-size: 40px;
     color: white;
     font-weight: 100;
@@ -196,7 +195,6 @@ body {
     position: relative;
     font-size: 18px;
     width: 93%;
-    left: 15px;
     color: white;
     font-weight: 300;
 }
@@ -207,32 +205,20 @@ body {
     }
 }
 
-@media only screen and (min-width: 900px) {
-    .content-title {
-        font-size: 46px;
-        top: 4vh;
-        left: 24px;
-    }
-
-    .content-element {
-        top: 4vh;
-        font-size: 25px;
-        left: 24px;
-    }
-}
-
 #education-section {
-    background: url("informatika.webp");
+    background: url("informatika.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position-y: bottom;
+    background-position-x: center;
 }
 
 #achievements-section {
-    background: url("success.webp");
+    background: url("success.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position-y: bottom;
+    background-position-x: center;
 }
 
 .li-margin {
@@ -254,10 +240,11 @@ a:active {
 }
 
 #picture-source-section {
-    background: url("sources.webp");
+    background: url("sources.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position-y: bottom;
+    background-position-x: center;
 }
 
 footer {
@@ -277,18 +264,4 @@ footer {
     width: 1px;
     margin: auto;
     background-color: gray;
-}
-
-@media only screen and (max-height: 600px) {
-    .section {
-        min-height: 600px;
-    }
-
-    .box-bg {
-        min-height: 535px;
-    }
-
-    .content-title {
-        top: 15px;
-    }
 }

@@ -4,7 +4,6 @@ playHelloFadeAnim(); // Play fade animation when page opened
 
 // On scroll
 let prevYPos = window.pageYOffset;
-console.log(`before: ${prevYPos}`);
 window.onscroll = () => {
   // Hide navbar when scroll down and vice versa
   let currYPos = window.pageYOffset;
