@@ -64,7 +64,7 @@ function setOnClick(linkSosmed, position, sosmed, userName) {
 function playHelloFadeAnim() {
   const animationTimeInMs = 1000
   const FRAME_TIME = 16 // 60 FPS
-  const MAX_COUNTER = animationTimeInMs / FRAME_TIME
+  const MAX_COUNTER = Math.round(animationTimeInMs / FRAME_TIME)
   let counter = 0
   let interval = setInterval(() => {
     if (counter == MAX_COUNTER) clearInterval(interval)
