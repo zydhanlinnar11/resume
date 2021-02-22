@@ -12,14 +12,20 @@ window.onscroll = () => {
 }
 
 // Navbar hide / show function
-function hideNavbar() { document.getElementById("navbar").style.top = "-64px" }
-function showNavbar() { document.getElementById("navbar").style.top = "0px" }
+function hideNavbar() {
+  document.getElementById("navbar").style.top = "-64px"
+}
+function showNavbar() {
+  document.getElementById("navbar").style.top = "0px"
+}
 
 // isScrolledDown function
 let isScrolledDown = () => window.pageYOffset > prevYPos
 
 // Always hide sidebar when window is resized
-window.onresize = () => { hideSideBar() }
+window.onresize = () => {
+  hideSideBar()
+}
 
 // set navigation button link
 function setNavButtonOnClick() {
@@ -70,6 +76,7 @@ function playHelloFadeAnim() {
     if (counter == MAX_COUNTER) clearInterval(interval)
     else
       counter++,
-        (document.getElementById("hello-section").style.opacity = counter / MAX_COUNTER)
+        (document.getElementById("hello-section").style.opacity =
+          counter / MAX_COUNTER)
   }, FRAME_TIME)
 }
