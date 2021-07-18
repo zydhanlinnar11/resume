@@ -1,0 +1,11 @@
+.main-content {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-content-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
