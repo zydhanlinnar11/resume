@@ -1,0 +1,15 @@
+.light-mode {
+  --glass-background: linear-gradient(
+    to bottom,
+    hsla(0, 0%, 100%, 0.2),
+    hsla(0, 0%, 100%, 0.5)
+  );
+}
+
+.glass {
+  background: var(--glass-background);
+  min-height: 80vh;
+  width: 60%;
+  border-radius: 2rem;
+  display: flex;
+}

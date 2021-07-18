@@ -1,0 +1,51 @@
+.light-mode {
+  --menu-background-color: linear-gradient(
+    to bottom right,
+    hsla(0, 0%, 100%, 0.5),
+    hsla(0, 0%, 100%, 0.2)
+  );
+}
+
+.menu {
+  background: var(--menu-background-color);
+  border-radius: 2rem 1rem 1rem 2rem;
+  width: 220px;
+}
+
+#user {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 3vh;
+  text-align: center;
+}
+
+#user-photo {
+  --photo-diameter: 3rem;
+  width: var(--photo-diameter);
+  height: var(--photo-diameter);
+  border-radius: 50%;
+}
+
+#user-name {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  color: hsl(231, 30%, 28%);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+#user-headline {
+  margin-top: 0.2rem;
+  color: hsl(231, 30%, 28%);
+  font-weight: 400;
+  font-size: 12px;
+}
+
+#items {
+  --padding-x: 10%;
+  padding-left: var(--padding-x);
+  padding-right: var(--padding-x);
+}

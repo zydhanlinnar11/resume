@@ -1,10 +1,12 @@
-import React from 'react';
-import './App.css';
+import './App.css'
+import GlassWindow from './components/GlassWindow'
 
 function App() {
   return (
-    <div></div>
-  );
+    <main>
+      <GlassWindow />
+    </main>
+  )
 }
 
-export default App;
+export default App

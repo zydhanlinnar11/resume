@@ -1,0 +1,35 @@
+.light-mode {
+  --menu-item-hover-background: linear-gradient(
+    to bottom right,
+    hsla(0, 0%, 100%, 0.6),
+    hsla(0, 0%, 100%, 0.3)
+  );
+}
+
+.menu-item {
+  --padding-x: 10%;
+  color: hsl(231, 30%, 25%);
+  height: 36px;
+  display: flex;
+  border-radius: 0.3rem;
+  display: flex;
+  padding-left: var(--padding-x);
+  padding-right: var(--padding-x);
+}
+
+.menu-item:hover {
+  background: var(--menu-item-hover-background);
+}
+
+.menu-item-text-wrapper {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item-text {
+  margin: 0;
+  margin-left: 0.3rem;
+}
